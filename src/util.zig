@@ -1,6 +1,6 @@
 const std = @import("std");
 pub const c = @cImport({
-    @cInclude("curl/curl.h");
+    @cInclude("curl.h");
 });
 const Allocator = std.mem.Allocator;
 const Encoder = std.base64.standard.Encoder;

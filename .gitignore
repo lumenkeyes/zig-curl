@@ -20,3 +20,4 @@ docs
 libroot*
 .DS_Store
 *.o
+prebuilt/
