@@ -75,6 +75,9 @@ fn buildLibcurl(
     if (curl == null or tls == null or zlib == null) {
         return null;
     }
+    b.installArtifact(curl.?);
+    b.installArtifact(tls.?);
+    b.installArtifact(zlib.?);
 
     const libcurl = curl.?;
     libcurl.linkLibrary(tls.?);
